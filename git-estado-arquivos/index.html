@@ -1,12 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Meu Site 123</h1>
-    <p>Modificação teste</p>
+
+    <!-- Cabeçalho e Navegação -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Meu Portfólio</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção de Início (Hero) -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h1>Bem-vindo ao Meu Mundo Digital</h1>
+            <p>Um desenvolvedor apaixonado por criar soluções inovadoras.</p>
+            <a href="#projetos" class="btn">Veja meus projetos</a>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <main>
+        <section id="sobre" class="container section">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Sou um desenvolvedor de software com foco em criar experiências de usuário limpas e eficientes. Tenho experiência com diversas tecnologias e estou sempre em busca de novos desafios para expandir meu conhecimento e contribuir para projetos significativos. Adoro café e código limpo.</p>
+        </section>
+
+        <!-- Seção de Projetos -->
+        <section id="projetos" class="container section">
+            <h2>Meus Projetos</h2>
+            <div class="project-gallery">
+                <!-- Projeto 1 -->
+                <div class="project-card">
+                    <h3>Projeto Alpha</h3>
+                    <p>Uma breve descrição do projeto, as tecnologias usadas e o que ele faz. Este foi um projeto desafiador que me ensinou muito sobre X e Y.</p>
+                </div>
+                <!-- Projeto 2 -->
+                <div class="project-card">
+                    <h3>Projeto Beta</h3>
+                    <p>Uma breve descrição do projeto, as tecnologias usadas e o que ele faz. Focado na experiência do usuário e design responsivo.</p>
+                </div>
+                <!-- Projeto 3 -->
+                <div class="project-card">
+                    <h3>Projeto Gamma</h3>
+                    <p>Uma breve descrição do projeto, as tecnologias usadas e o que ele faz. Uma aplicação full-stack com um backend robusto.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contato" class="container section">
+            <h2>Entre em Contato</h2>
+            <p>Tem alguma pergunta ou quer trabalhar junto? Me mande uma mensagem!</p>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu E-mail" required>
+                <textarea name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
